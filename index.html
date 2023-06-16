@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Ngọ Môn Huế 3D</title>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.26/"></script>
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" defer></script>
+  <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "bcf54bfd-3149-405f-bcac-1c34a4ebbd0d",
+      });
+    });
+  </script>
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #back {
+      position: absolute;
+      bottom: 20px;
+    }
+
+    #back i {
+      background-image: url(app/public/img/back.svg);
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 100px;
+      height: 25px;
+      padding-left: 25px;
+      padding-top: 2px;
+      margin: 10px;
+      cursor: pointer;
+      background-size: 20px;
+    }
+  </style>
+
+  <script src="./index.js" type="module"></script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+</html>
