@@ -92,9 +92,9 @@ export const right_building_floor1 = (
   };
 
   return [
-    bottomFloor,
-    floor,
-    secondFloor,
+    bottomFloor, 
+    floor, 
+    secondFloor, 
     tileFloor
   ];
 };

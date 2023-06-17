@@ -160,7 +160,7 @@ export const doorR_R = (
   const decoVertDoor18GeojsonLayer = new GeoJSONLayer({
     url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/RDoor/RB.RDoor.decoVertDoor18.geojson.json",
   });
-
+  
   baseGeojsonLayer.renderer = {
     type: "simple",
     symbol: {

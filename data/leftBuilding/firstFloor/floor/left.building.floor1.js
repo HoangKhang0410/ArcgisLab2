@@ -15,7 +15,7 @@ export const left_building_floor1 = (
     url: baseURL + parentPath + "data/leftBuilding/firstFloor/floor/left.building.bottom.floor.geojson.json",
   });
 
-  const floor = new GeoJSONLayer({
+  const floor  = new  GeoJSONLayer({
     url: baseURL + parentPath + "data/leftBuilding/firstFloor/floor/left.building.floor.geojson.json",
   });
 

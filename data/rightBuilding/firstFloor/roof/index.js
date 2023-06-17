@@ -39,7 +39,7 @@ export const roof_RB = (
   const roofGeojsonLayer4 = new GeoJSONLayer({
     url: baseURL + parentPath + "data/rightBuilding/firstFloor/roof/right.Building.roof4.geojson.json",
   });
-
+  
   roofGeojsonLayer.renderer = {
     type: "simple",
     symbol: {
