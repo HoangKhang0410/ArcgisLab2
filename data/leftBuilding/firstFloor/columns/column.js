@@ -36,7 +36,7 @@ export const left_building_cols_ff = (
   esriRequest
 ) => {
 
-  const baseURL = "https://gis-historical-relic-management.vercel.app/api/cylinder/path?path="
+  const baseURL = "https://gis-historical-relic.onrender.com/api/cylinder/path?path="
   const parentPath = "ngomon/"
 
   const col1 = new GeoJSONLayer({

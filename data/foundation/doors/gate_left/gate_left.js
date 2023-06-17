@@ -1,7 +1,7 @@
 export const gate_left_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
 
-    const baseURL = "https://gis-historical-relic-management.vercel.app/api/bodyComplex/path?path="
+    const baseURL = "https://gis-historical-relic.onrender.com/api/bodyComplex/path?path="
     const parentPath = "ngomon/"
 
     const GateLefWall = new GeoJSONLayer({

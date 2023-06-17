@@ -8,7 +8,7 @@ export const doorR_R = (
   esriRequest
 ) => {
 
-  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const baseURL = "https://gis-historical-relic.onrender.com/api/prism/path?path="
   const parentPath = "ngomon/"
 
   const baseGeojsonLayer = new GeoJSONLayer({
@@ -160,7 +160,7 @@ export const doorR_R = (
   const decoVertDoor18GeojsonLayer = new GeoJSONLayer({
     url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/RDoor/RB.RDoor.decoVertDoor18.geojson.json",
   });
-  
+
   baseGeojsonLayer.renderer = {
     type: "simple",
     symbol: {

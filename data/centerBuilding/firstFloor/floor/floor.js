@@ -8,8 +8,8 @@ export const floor_center = (
   esriRequest
 ) => {
 
-  const prismBaseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
-  const bodycompBaseURL = "https://gis-historical-relic-management.vercel.app/api/bodyComplex/path?path="
+  const prismBaseURL = "https://gis-historical-relic.onrender.com/api/prism/path?path="
+  const bodycompBaseURL = "https://gis-historical-relic.onrender.com/api/bodyComplex/path?path="
   const parentPath = "ngomon/"
 
   const bottomFloor = new GeoJSONLayer({

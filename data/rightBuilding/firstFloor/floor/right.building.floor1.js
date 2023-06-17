@@ -8,7 +8,7 @@ export const right_building_floor1 = (
   esriRequest
 ) => {
 
-  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const baseURL = "https://gis-historical-relic.onrender.com/api/prism/path?path="
   const parentPath = "ngomon/"
 
   const bottomFloor = new GeoJSONLayer({
@@ -92,9 +92,9 @@ export const right_building_floor1 = (
   };
 
   return [
-    bottomFloor, 
-    floor, 
-    secondFloor, 
+    bottomFloor,
+    floor,
+    secondFloor,
     tileFloor
   ];
 };
