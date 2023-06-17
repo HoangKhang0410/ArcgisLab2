@@ -1,11 +1,15 @@
 export const roof_back_FF = (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const roof1 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/roof/center.building.roof.1.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/roof/center.building.roof.1.geojson.json"
   });
 
   const roof2 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/roof/center.building.roof.2.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/roof/center.building.roof.2.geojson.json"
   });
 
 
@@ -48,3 +52,7 @@ export const roof_back_FF = (Map, SceneView, GeoJSONLayer, SceneLayer,
     roof2
   ]
 }
+
+
+// ngomon/data/centerBuilding/firstFloor/roof/center.building.roof.2.geojson.json
+// ngomon/data/centerBuilding/firstFloor/roof/center.building.roof.1.geojson.json

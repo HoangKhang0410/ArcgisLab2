@@ -1,20 +1,24 @@
 export const gate_left_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
+
+    const baseURL = "https://gis-historical-relic-management.vercel.app/api/bodyComplex/path?path="
+    const parentPath = "ngomon/"
+
     const GateLefWall = new GeoJSONLayer({
-        url: "./data/foundation/doors/gate_left/gate_left.json"
+        url: baseURL + parentPath + "data/foundation/doors/gate_left/gate_left.json"
     });
 
     const GateLeftDoor = new GeoJSONLayer({
-        url: "./data/foundation/doors/gate_left/gate_left_door.json"
+        url: baseURL + parentPath + "data/foundation/doors/gate_left/gate_left_door.json"
     });
 
     const GateLeftTopDoor = new GeoJSONLayer({
-        url: "./data/foundation/doors/gate_left/gate_left_door_top.json"
+        url: baseURL + parentPath + "data/foundation/doors/gate_left/gate_left_door_top.json"
     });
 
 
     GateLefWall.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -30,7 +34,7 @@ export const gate_left_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     GateLeftDoor.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -44,9 +48,9 @@ export const gate_left_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
             ]
         }
     };
-    
+
     GateLeftTopDoor.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -67,3 +71,7 @@ export const gate_left_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
         GateLeftTopDoor
     ]
 }
+
+// ngomon/data/foundation/doors/gate_left/gate_left_door_top.json
+// ngomon/data/foundation/doors/gate_left/gate_left_door.json
+// ngomon/data/foundation/doors/gate_left/gate_left.json

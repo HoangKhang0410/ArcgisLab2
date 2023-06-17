@@ -1,256 +1,259 @@
 export const door_back_FF = (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) => {
 
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const door3 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.3.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.3.geojson.json"
   });
 
   const door3decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.3.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.3.geojson.json"
   });
 
   const door3decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.3.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.3.geojson.json"
   });
 
   const door4 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.4.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.4.geojson.json"
   });
 
   const door4decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.4.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.4.geojson.json"
   });
 
   const door4decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.4.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.4.geojson.json"
   });
 
   const door5 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.5.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.5.geojson.json"
   });
 
   const door5decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.5.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.5.geojson.json"
   });
 
   const door5decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.5.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.5.geojson.json"
   });
 
   const door6 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.6.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.6.geojson.json"
   });
 
   const door6decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.6.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.6.geojson.json"
   });
 
   const door6decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.6.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.6.geojson.json"
   });
 
   const door7 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.7.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.7.geojson.json"
   });
 
   const door7decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.7.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.7.geojson.json"
   });
 
   const door7decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.7.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.7.geojson.json"
   });
 
   const door8 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.8.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.8.geojson.json"
   });
 
   const door8decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.8.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.8.geojson.json"
   });
 
   const door8decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.8.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.8.geojson.json"
   });
 
   const door9 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.9.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.9.geojson.json"
   });
 
   const door9decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.9.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.9.geojson.json"
   });
 
   const door9decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.9.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.9.geojson.json"
   });
 
   const door10 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.10.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.10.geojson.json"
   });
 
   const door10decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.10.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.10.geojson.json"
   });
 
   const door10decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.10.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.10.geojson.json"
   });
 
   const door11 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.11.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.11.geojson.json"
   });
 
   const door11decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.11.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.11.geojson.json"
   });
 
   const door11decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.11.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.11.geojson.json"
   });
 
   const door12 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.12.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.12.geojson.json"
   });
 
   const door12decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.12.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.12.geojson.json"
   });
 
   const door12decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.12.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.12.geojson.json"
   });
 
   const door13 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.13.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.13.geojson.json"
   });
 
   const door13decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.13.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.13.geojson.json"
   });
 
   const door13decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.13.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.13.geojson.json"
   });
 
   const door14 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.14.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.14.geojson.json"
   });
 
   const door14decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.14.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.14.geojson.json"
   });
 
   const door14decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.14.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.14.geojson.json"
   });
 
   const door15 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.15.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.15.geojson.json"
   });
 
   const door15decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.15.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.15.geojson.json"
   });
 
   const door15decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.15.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.15.geojson.json"
   });
 
   const door16 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.16.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.16.geojson.json"
   });
 
   const door16decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.16.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.16.geojson.json"
   });
 
   const door16decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.16.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.16.geojson.json"
   });
 
   const door17 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.17.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.17.geojson.json"
   });
 
   const door17decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.17.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.17.geojson.json"
   });
 
   const door17decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.17.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.17.geojson.json"
   });
 
   const door18 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.18.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.18.geojson.json"
   });
 
   const door18decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.18.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.18.geojson.json"
   });
 
   const door18decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.18.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.18.geojson.json"
   });
 
   const door19 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.19.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.19.geojson.json"
   });
 
   const door19decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.19.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.19.geojson.json"
   });
 
   const door19decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.19.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.19.geojson.json"
   });
 
   const door20 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.20.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.20.geojson.json"
   });
 
   const door20decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.20.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.20.geojson.json"
   });
 
   const door20decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.20.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.20.geojson.json"
   });
 
   const door21 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.21.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.21.geojson.json"
   });
 
   const door21decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.21.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.21.geojson.json"
   });
 
   const door21decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.21.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.21.geojson.json"
   });
 
   const door22 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.22.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.22.geojson.json"
   });
 
   const door22decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.22.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.22.geojson.json"
   });
 
   const door22decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.22.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.22.geojson.json"
   });
 
   const door23 = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.door.23.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.door.23.geojson.json"
   });
 
   const door23decovert = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.23.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.23.geojson.json"
   });
 
   const door23decohori = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.23.geojson.json"
+    url: baseURL + parentPath + "data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.23.geojson.json"
   });
 
   door3.renderer = {
@@ -1262,3 +1265,68 @@ export const door_back_FF = (Map, SceneView, GeoJSONLayer, SceneLayer,
     door23decohori,
   ]
 }
+
+
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.17.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.12.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.15.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.10.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.13.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.14.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.18.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.16.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.11.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.20.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.21.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.4.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.23.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.22.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.19.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.3.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.6.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.5.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.9.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.7.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.11.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.10.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.door.8.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.12.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.15.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.14.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.13.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.16.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.17.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.21.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.18.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.20.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.19.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.23.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.4.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.22.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.3.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.5.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.7.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.10.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.8.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.6.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.11.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecohori.9.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.13.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.14.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.12.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.16.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.18.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.15.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.17.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.21.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.22.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.19.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.3.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.23.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.4.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.20.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.7.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.6.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.5.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.8.geojson.json
+// ngomon/data/centerBuilding/firstFloor/doors/back/center.building.doordecovert.9.geojson.json

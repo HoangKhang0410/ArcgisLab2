@@ -1,15 +1,19 @@
 export const gate_right_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
+
+    const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+    const parentPath = "ngomon/"
+
     const gateRightWallRailRoot = new GeoJSONLayer({
-        url: "./data/foundation/rails/gate_right/floor.gate.right.rail.root.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/gate_right/floor.gate.right.rail.root.geojson.json"
     });
 
     const gateRightRailWall = new GeoJSONLayer({
-        url: "./data/foundation/rails/gate_right/floor.gate.right.rail.wall.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/gate_right/floor.gate.right.rail.wall.geojson.json"
     });
 
     gateRightWallRailRoot.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -47,3 +51,6 @@ export const gate_right_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
         gateRightRailWall
     ]
 }
+
+// ngomon/data/foundation/rails/gate_right/floor.gate.right.rail.root.geojson.json
+// ngomon/data/foundation/rails/gate_right/floor.gate.right.rail.wall.geojson.json

@@ -1,40 +1,44 @@
 export const back_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
+
+    const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+    const parentPath = "ngomon/"
+
     const backWallPart1 = new GeoJSONLayer({
-        url: "./data/foundation/walls/back_wall/floor.back.wall.part1.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/back_wall/floor.back.wall.part1.geojson.json"
     });
 
     const backWallPart2 = new GeoJSONLayer({
-        url: "./data/foundation/walls/back_wall/floor.back.wall.part2.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/back_wall/floor.back.wall.part2.geojson.json"
     });
 
 
     const backWallPart3 = new GeoJSONLayer({
-        url: "./data/foundation/walls/back_wall/floor.back.wall.part3.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/back_wall/floor.back.wall.part3.geojson.json"
     });
 
 
     const backWallPart4 = new GeoJSONLayer({
-        url: "./data/foundation/walls/back_wall/floor.back.wall.part4.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/back_wall/floor.back.wall.part4.geojson.json"
     });
 
 
     const backWallPart5 = new GeoJSONLayer({
-        url: "./data/foundation/walls/back_wall/floor.back.wall.part5.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/back_wall/floor.back.wall.part5.geojson.json"
     });
 
 
     const backWallPart6 = new GeoJSONLayer({
-        url: "./data/foundation/walls/back_wall/floor.back.wall.part6.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/back_wall/floor.back.wall.part6.geojson.json"
     });
 
 
-    
+
 
 
 
     backWallPart1.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -50,7 +54,7 @@ export const back_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     backWallPart2.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -66,7 +70,7 @@ export const back_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     backWallPart3.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -82,7 +86,7 @@ export const back_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     backWallPart4.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -98,7 +102,7 @@ export const back_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     backWallPart5.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -114,7 +118,7 @@ export const back_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     backWallPart6.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -129,7 +133,7 @@ export const back_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
         }
     };
 
-    
+
 
     return [
         backWallPart1,
@@ -140,3 +144,10 @@ export const back_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
         backWallPart6
     ]
 }
+
+// ngomon/data/foundation/walls/back_wall/floor.back.wall.part1.geojson.json
+// ngomon/data/foundation/walls/back_wall/floor.back.wall.part3.geojson.json
+// ngomon/data/foundation/walls/back_wall/floor.back.wall.part6.geojson.json
+// ngomon/data/foundation/walls/back_wall/floor.back.wall.part4.geojson.json
+// ngomon/data/foundation/walls/back_wall/floor.back.wall.part2.geojson.json
+// ngomon/data/foundation/walls/back_wall/floor.back.wall.part5.geojson.json

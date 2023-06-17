@@ -1,27 +1,31 @@
 export const left_step = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
+
+    const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+    const parentPath = "ngomon/"
+
     const rightStep1 = new GeoJSONLayer({
-        url: "./data/leftBuilding/firstFloor/step/left_step/floor1.left.step1.geojson.json"
+        url: baseURL + parentPath + "data/leftBuilding/firstFloor/step/left_step/floor1.left.step1.geojson.json"
     });
 
     const rightStep2 = new GeoJSONLayer({
-        url: "./data/leftBuilding/firstFloor/step/left_step/floor1.left.step2.geojson.json"
+        url: baseURL + parentPath + "data/leftBuilding/firstFloor/step/left_step/floor1.left.step2.geojson.json"
     });
 
     const rightStep3 = new GeoJSONLayer({
-        url: "./data/leftBuilding/firstFloor/step/left_step/floor1.left.step3.geojson.json"
+        url: baseURL + parentPath + "data/leftBuilding/firstFloor/step/left_step/floor1.left.step3.geojson.json"
     });
 
     const rightStep4 = new GeoJSONLayer({
-        url: "./data/leftBuilding/firstFloor/step/left_step/floor1.left.step4.geojson.json"
+        url: baseURL + parentPath + "data/leftBuilding/firstFloor/step/left_step/floor1.left.step4.geojson.json"
     });
 
     const rightStep5 = new GeoJSONLayer({
-        url: "./data/leftBuilding/firstFloor/step/left_step/floor1.left.step5.geojson.json"
+        url: baseURL + parentPath + "data/leftBuilding/firstFloor/step/left_step/floor1.left.step5.geojson.json"
     });
 
     const rightStep6 = new GeoJSONLayer({
-        url: "./data/leftBuilding/firstFloor/step/left_step/floor1.left.step6.geojson.json"
+        url: baseURL + parentPath + "data/leftBuilding/firstFloor/step/left_step/floor1.left.step6.geojson.json"
     });
 
 
@@ -133,3 +137,10 @@ export const left_step = (Map, SceneView, GeoJSONLayer, SceneLayer,
         rightStep6
     ]
 }
+
+// ngomon/data/leftBuilding/firstFloor/step/left_step/floor1.left.step1.geojson.json
+// ngomon/data/leftBuilding/firstFloor/step/left_step/floor1.left.step3.geojson.json
+// ngomon/data/leftBuilding/firstFloor/step/left_step/floor1.left.step2.geojson.json
+// ngomon/data/leftBuilding/firstFloor/step/left_step/floor1.left.step4.geojson.json
+// ngomon/data/leftBuilding/firstFloor/step/left_step/floor1.left.step6.geojson.json
+// ngomon/data/leftBuilding/firstFloor/step/left_step/floor1.left.step5.geojson.json

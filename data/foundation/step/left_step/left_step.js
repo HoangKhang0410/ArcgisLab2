@@ -1,91 +1,95 @@
 export const left_step = (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const leftStep1 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step1.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step1.geojson.json"
   });
 
   const leftStep2 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step2.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step2.geojson.json"
   });
-  
+
   const leftStep3 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step3.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step3.geojson.json"
   });
 
   const leftStep4 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step4.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step4.geojson.json"
   });
 
   const leftStep5 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step5.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step5.geojson.json"
   });
 
   const leftStep6 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step6.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step6.geojson.json"
   });
 
   const leftStep7 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step7.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step7.geojson.json"
   });
 
   const leftStep8 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step8.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step8.geojson.json"
   });
 
   const leftStep9 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step9.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step9.geojson.json"
   });
 
   const leftStep10 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step10.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step10.geojson.json"
   });
-  
+
   const leftStep11 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step11.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step11.geojson.json"
   });
 
   const leftStep12 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step12.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step12.geojson.json"
   });
 
   const leftStep13 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step13.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step13.geojson.json"
   });
 
   const leftStep14 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step14.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step14.geojson.json"
   });
 
   const leftStep15 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step15.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step15.geojson.json"
   });
 
   const leftStep16 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step16.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step16.geojson.json"
   });
 
   const leftStep17 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step17.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step17.geojson.json"
   });
 
   const leftStep18 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step18.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step18.geojson.json"
   });
 
   const leftStep19 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step19.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step19.geojson.json"
   });
 
   const leftStep20 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step20.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step20.geojson.json"
   });
 
   const leftStep21 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step21.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step21.geojson.json"
   });
 
   const leftStep22 = new GeoJSONLayer({
-    url: "./data/foundation/step/left_step/floor.left.step22.geojson.json"
+    url: baseURL + parentPath + "data/foundation/step/left_step/floor.left.step22.geojson.json"
   });
 
 
@@ -474,3 +478,26 @@ export const left_step = (Map, SceneView, GeoJSONLayer, SceneLayer,
     leftStep22,
   ]
 }
+
+// ngomon/data/foundation/step/left_step/floor.left.step1.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step14.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step10.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step15.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step12.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step11.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step13.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step19.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step18.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step16.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step17.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step20.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step2.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step21.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step3.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step22.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step5.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step6.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step7.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step4.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step8.geojson.json
+// ngomon/data/foundation/step/left_step/floor.left.step9.geojson.json

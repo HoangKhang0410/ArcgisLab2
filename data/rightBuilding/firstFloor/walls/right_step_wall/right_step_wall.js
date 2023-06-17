@@ -7,12 +7,16 @@ export const right_step_wall = (
   Graphic,
   esriRequest
 ) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const leftWall = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/walls/right_step_wall/right.step.left.wall.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/walls/right_step_wall/right.step.left.wall.geojson.json",
   });
 
   const rightWall = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/walls/right_step_wall/right.step.right.wall.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/walls/right_step_wall/right.step.right.wall.geojson.json",
   });
 
   leftWall.renderer = {
@@ -49,3 +53,7 @@ export const right_step_wall = (
 
   return [leftWall, rightWall];
 };
+
+
+// ngomon/data/rightBuilding/firstFloor/walls/right_step_wall/right.step.left.wall.geojson.json
+// ngomon/data/rightBuilding/firstFloor/walls/right_step_wall/right.step.right.wall.geojson.json

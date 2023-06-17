@@ -7,35 +7,39 @@ export const column_SF = (
   Graphic,
   esriRequest
 ) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/cylinder/path?path="
+  const parentPath = "ngomon/"
+
   const columnCornerLBGeojsonLayer = new GeoJSONLayer({
-    url: "./data/centerBuilding/secondFloor/column/columnCornerLB.geojson.json",
+    url: baseURL + parentPath + "data/centerBuilding/secondFloor/column/columnCornerLB.geojson.json",
   });
   const columnCornerLTGeojsonLayer = new GeoJSONLayer({
-    url: "./data/centerBuilding/secondFloor/column/columnCornerLT.geojson.json",
+    url: baseURL + parentPath + "data/centerBuilding/secondFloor/column/columnCornerLT.geojson.json",
   });
   const columnCornerRBGeojsonLayer = new GeoJSONLayer({
-    url: "./data/centerBuilding/secondFloor/column/columnCornerRB.geojson.json",
+    url: baseURL + parentPath + "data/centerBuilding/secondFloor/column/columnCornerRB.geojson.json",
   });
   const columnCornerRTGeojsonLayer = new GeoJSONLayer({
-    url: "./data/centerBuilding/secondFloor/column/columnCornerRT.geojson.json",
+    url: baseURL + parentPath + "data/centerBuilding/secondFloor/column/columnCornerRT.geojson.json",
   });
   const columnTallLBGeojsonLayer = new GeoJSONLayer({
-    url: "./data/centerBuilding/secondFloor/column/columnTallLB.geojson.json",
+    url: baseURL + parentPath + "data/centerBuilding/secondFloor/column/columnTallLB.geojson.json",
   });
   const columnTallLTGeojsonLayer = new GeoJSONLayer({
-    url: "./data/centerBuilding/secondFloor/column/columnTallLT.geojson.json",
+    url: baseURL + parentPath + "data/centerBuilding/secondFloor/column/columnTallLT.geojson.json",
   });
   const columnTallRTGeojsonLayer = new GeoJSONLayer({
-    url: "./data/centerBuilding/secondFloor/column/columnTallRT.geojson.json",
+    url: baseURL + parentPath + "data/centerBuilding/secondFloor/column/columnTallRT.geojson.json",
   });
   const columnTallRBGeojsonLayer = new GeoJSONLayer({
-    url: "./data/centerBuilding/secondFloor/column/columnTallRB.geojson.json",
+    url: baseURL + parentPath + "data/centerBuilding/secondFloor/column/columnTallRB.geojson.json",
   });
   const columnExtraRGeojsonLayer = new GeoJSONLayer({
-    url: "./data/centerBuilding/secondFloor/column/columnExtraR.geojson.json",
+    url: baseURL + parentPath + "data/centerBuilding/secondFloor/column/columnExtraR.geojson.json",
   });
   const columnExtraLGeojsonLayer = new GeoJSONLayer({
-    url: "./data/centerBuilding/secondFloor/column/columnExtraL.geojson.json",
+    url: baseURL + parentPath + "data/centerBuilding/secondFloor/column/columnExtraL.geojson.json",
   });
 
 
@@ -203,3 +207,15 @@ export const column_SF = (
     columnExtraLGeojsonLayer
   ];
 };
+
+
+// ngomon/data/centerBuilding/secondFloor/column/columnCornerLT.geojson.json
+// ngomon/data/centerBuilding/secondFloor/column/columnCornerLB.geojson.json
+// ngomon/data/centerBuilding/secondFloor/column/columnCornerRB.geojson.json
+// ngomon/data/centerBuilding/secondFloor/column/columnTallLB.geojson.json
+// ngomon/data/centerBuilding/secondFloor/column/columnExtraL.geojson.json
+// ngomon/data/centerBuilding/secondFloor/column/columnCornerRT.geojson.json
+// ngomon/data/centerBuilding/secondFloor/column/columnTallRT.geojson.json
+// ngomon/data/centerBuilding/secondFloor/column/columnTallLT.geojson.json
+// ngomon/data/centerBuilding/secondFloor/column/columnExtraR.geojson.json
+// ngomon/data/centerBuilding/secondFloor/column/columnTallRB.geojson.json

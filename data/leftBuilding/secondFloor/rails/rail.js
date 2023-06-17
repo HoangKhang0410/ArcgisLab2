@@ -7,40 +7,44 @@ export const wall_rail = (
   Graphic,
   esriRequest
 ) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const frontWallRail = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/rails/front.wall.rail.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/rails/front.wall.rail.geojson.json",
   });
 
   const frontEntryWallRail = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/rails/front.entry.wall.rail.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/rails/front.entry.wall.rail.geojson.json",
   });
 
   const rightWallRail = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/rails/right.wall.rail.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/rails/right.wall.rail.geojson.json",
   });
 
   const rightWallRail2 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/rails/right.wall.rail.part2.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/rails/right.wall.rail.part2.geojson.json",
   });
 
   const leftWallRail = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/rails/left.wall.rail.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/rails/left.wall.rail.geojson.json",
   });
 
   const leftWallRail2 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/rails/left.wall.rail.part2.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/rails/left.wall.rail.part2.geojson.json",
   });
 
   const leftWallRail3 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/rails/left.wall.rail.part3.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/rails/left.wall.rail.part3.geojson.json",
   });
 
   const backWallRail = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/rails/back.wall.rail.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/rails/back.wall.rail.geojson.json",
   });
 
   const backWallRail2 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/rails/back.wall.rail.part2.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/rails/back.wall.rail.part2.geojson.json",
   });
 
   frontWallRail.renderer = {
@@ -199,3 +203,14 @@ export const wall_rail = (
     backWallRail2,
   ];
 };
+
+
+// ngomon/data/leftBuilding/secondFloor/rails/front.entry.wall.rail.geojson.json
+// ngomon/data/leftBuilding/secondFloor/rails/left.wall.rail.part3.geojson.json
+// ngomon/data/leftBuilding/secondFloor/rails/front.wall.rail.geojson.json
+// ngomon/data/leftBuilding/secondFloor/rails/back.wall.rail.part2.geojson.json
+// ngomon/data/leftBuilding/secondFloor/rails/right.wall.rail.geojson.json
+// ngomon/data/leftBuilding/secondFloor/rails/left.wall.rail.part2.geojson.json
+// ngomon/data/leftBuilding/secondFloor/rails/back.wall.rail.geojson.json
+// ngomon/data/leftBuilding/secondFloor/rails/left.wall.rail.geojson.json
+// ngomon/data/leftBuilding/secondFloor/rails/right.wall.rail.part2.geojson.json

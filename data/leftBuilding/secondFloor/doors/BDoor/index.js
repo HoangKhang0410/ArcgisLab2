@@ -7,29 +7,33 @@ export const doorB_R = (
   Graphic,
   esriRequest
 ) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const door1GeojsonLayer = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.door1.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.door1.geojson.json",
   });
   const door2GeojsonLayer = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.door2.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.door2.geojson.json",
   });
   const decoHoriDoor1GeojsonLayer = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoHoriDoor1.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoHoriDoor1.geojson.json",
   });
   const decoHoriDoor2GeojsonLayer = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoHoriDoor2.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoHoriDoor2.geojson.json",
   });
   const decoVertDoor1GeojsonLayer = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoVertDoor1.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoVertDoor1.geojson.json",
   });
   const decoVertDoor2GeojsonLayer = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoVertDoor2.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoVertDoor2.geojson.json",
   });
   const decoVertDoor3GeojsonLayer = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoVertDoor3.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoVertDoor3.geojson.json",
   });
   const decoVertDoor4GeojsonLayer = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoVertDoor4.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoVertDoor4.geojson.json",
   });
 
   door1GeojsonLayer.renderer = {
@@ -164,3 +168,13 @@ export const doorB_R = (
     decoVertDoor4GeojsonLayer,
   ];
 };
+
+
+// ngomon/data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoVertDoor3.geojson.json
+// ngomon/data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoVertDoor1.geojson.json
+// ngomon/data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoHoriDoor1.geojson.json
+// ngomon/data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.door2.geojson.json
+// ngomon/data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoVertDoor4.geojson.json
+// ngomon/data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.door1.geojson.json
+// ngomon/data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoHoriDoor2.geojson.json
+// ngomon/data/leftBuilding/secondFloor/doors/BDoor/CB.BDoor.decoVertDoor2.geojson.json

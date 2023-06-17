@@ -1,15 +1,19 @@
 export const left_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const leftWallEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/foundation/doors/left_entry/left_wall.geojson.json"
+    url: baseURL + parentPath + "data/foundation/doors/left_entry/left_wall.geojson.json"
   });
 
   const rightWallLeftEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/foundation/doors/left_entry/right_wall.geojson.json"
+    url: baseURL + parentPath + "data/foundation/doors/left_entry/right_wall.geojson.json"
   });
 
   const topWallLeftEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/foundation/doors/left_entry/top_wall.geojson.json"
+    url: baseURL + parentPath + "data/foundation/doors/left_entry/top_wall.geojson.json"
   });
 
   leftWallEntryGeojsonLayer.renderer = {
@@ -65,3 +69,7 @@ export const left_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
     topWallLeftEntryGeojsonLayer
   ]
 }
+
+// ngomon/data/foundation/doors/left_entry/left_wall.geojson.json
+// ngomon/data/foundation/doors/left_entry/top_wall.geojson.json
+// ngomon/data/foundation/doors/left_entry/right_wall.geojson.json

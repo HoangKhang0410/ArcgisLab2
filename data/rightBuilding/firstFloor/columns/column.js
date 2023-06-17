@@ -35,88 +35,92 @@ export const right_building_cols = (
   Graphic,
   esriRequest
 ) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/cylinder/path?path="
+  const parentPath = "ngomon/"
+
   const col1 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column1.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column1.geojson.json",
   });
 
   const col2 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column2.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column2.geojson.json",
   });
 
   const col3 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column3.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column3.geojson.json",
   });
 
   const col4 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column4.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column4.geojson.json",
   });
   const col5 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column5.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column5.geojson.json",
   });
 
   const col6 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column6.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column6.geojson.json",
   });
 
   const col7 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column7.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column7.geojson.json",
   });
   const col8 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column8.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column8.geojson.json",
   });
   const col9 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column9.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column9.geojson.json",
   });
   const col10 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column10.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column10.geojson.json",
   });
   const col11 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column11.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column11.geojson.json",
   });
   const col12 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column12.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column12.geojson.json",
   });
   const col13 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column13.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column13.geojson.json",
   });
   const col14 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column14.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column14.geojson.json",
   });
   const col15 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column15.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column15.geojson.json",
   });
   const col16 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column16.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column16.geojson.json",
   });
   const col17 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column17.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column17.geojson.json",
   });
   const col18 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column18.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column18.geojson.json",
   });
   const col19 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column19.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column19.geojson.json",
   });
   const col20 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column20.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column20.geojson.json",
   });
   const col21 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column21.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column21.geojson.json",
   });
   const col22 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column22.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column22.geojson.json",
   });
   const col23 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column23.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column23.geojson.json",
   });
   const col24 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column24.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column24.geojson.json",
   });
   const col25 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column25.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column25.geojson.json",
   });
   const col26 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/columns/right.building.column26.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/columns/right.building.column26.geojson.json",
   });
 
   col1.renderer = {
@@ -539,3 +543,31 @@ export const right_building_cols = (
     col26,
   ];
 };
+
+
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column10.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column1.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column15.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column16.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column17.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column12.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column18.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column13.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column19.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column14.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column2.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column20.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column22.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column21.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column11.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column23.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column24.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column25.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column26.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column4.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column6.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column5.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column3.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column7.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column9.geojson.json
+// ngomon/data/rightBuilding/firstFloor/columns/right.building.column8.geojson.json

@@ -1,15 +1,19 @@
 export const right_front_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
+
+    const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+    const parentPath = "ngomon/"
+
     const floorRightFrontWallRailRoot = new GeoJSONLayer({
-        url: "./data/foundation/rails/right_front_wall/floor.right.front.wall.rail.root.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/right_front_wall/floor.right.front.wall.rail.root.geojson.json"
     });
 
     const floorRightFrontWallRailColumn1 = new GeoJSONLayer({
-        url: "./data/foundation/rails/right_front_wall/floor.right.front.wall.rail.column1.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/right_front_wall/floor.right.front.wall.rail.column1.geojson.json"
     });
 
     const floorRightFrontWallRailWall = new GeoJSONLayer({
-        url: "./data/foundation/rails/right_front_wall/floor.right.front.wall.rail.wall.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/right_front_wall/floor.right.front.wall.rail.wall.geojson.json"
     });
 
     floorRightFrontWallRailRoot.renderer = {
@@ -60,7 +64,7 @@ export const right_front_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
             ]
         }
     };
-    
+
 
     return [
         floorRightFrontWallRailRoot,
@@ -68,3 +72,7 @@ export const right_front_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
         floorRightFrontWallRailWall
     ]
 }
+
+// ngomon/data/foundation/rails/right_front_wall/floor.right.front.wall.rail.column1.geojson.json
+// ngomon/data/foundation/rails/right_front_wall/floor.right.front.wall.rail.root.geojson.json
+// ngomon/data/foundation/rails/right_front_wall/floor.right.front.wall.rail.wall.geojson.json

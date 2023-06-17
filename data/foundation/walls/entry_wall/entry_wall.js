@@ -1,40 +1,44 @@
 export const entry_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
+
+    const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+    const parentPath = "ngomon/"
+
     const entryWallPart1 = new GeoJSONLayer({
-        url: "./data/foundation/walls/entry_wall/floor.entry.wall.part1.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/entry_wall/floor.entry.wall.part1.geojson.json"
     });
 
     const entryWallPart2 = new GeoJSONLayer({
-        url: "./data/foundation/walls/entry_wall/floor.entry.wall.part2.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/entry_wall/floor.entry.wall.part2.geojson.json"
     });
 
 
     const entryWallPart3 = new GeoJSONLayer({
-        url: "./data/foundation/walls/entry_wall/floor.entry.wall.part3.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/entry_wall/floor.entry.wall.part3.geojson.json"
     });
 
 
     const entryWallPart4 = new GeoJSONLayer({
-        url: "./data/foundation/walls/entry_wall/floor.entry.wall.part4.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/entry_wall/floor.entry.wall.part4.geojson.json"
     });
 
 
     const entryWallPart5 = new GeoJSONLayer({
-        url: "./data/foundation/walls/entry_wall/floor.entry.wall.part5.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/entry_wall/floor.entry.wall.part5.geojson.json"
     });
 
 
     const entryWallPart6 = new GeoJSONLayer({
-        url: "./data/foundation/walls/entry_wall/floor.entry.wall.part6.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/entry_wall/floor.entry.wall.part6.geojson.json"
     });
 
 
-    
+
 
 
 
     entryWallPart1.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -50,7 +54,7 @@ export const entry_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     entryWallPart2.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -66,7 +70,7 @@ export const entry_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     entryWallPart3.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -82,7 +86,7 @@ export const entry_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     entryWallPart4.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -98,7 +102,7 @@ export const entry_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     entryWallPart5.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -114,7 +118,7 @@ export const entry_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     entryWallPart6.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -129,7 +133,7 @@ export const entry_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
         }
     };
 
-    
+
 
     return [
         entryWallPart1,
@@ -140,3 +144,10 @@ export const entry_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
         entryWallPart6
     ]
 }
+
+// ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part1.geojson.json
+// ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part5.geojson.json
+// ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part2.geojson.json
+// ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part6.geojson.json
+// ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part4.geojson.json
+// ngomon/data/foundation/walls/entry_wall/floor.entry.wall.part3.geojson.json

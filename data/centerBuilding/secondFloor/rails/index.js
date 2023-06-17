@@ -7,8 +7,12 @@ export const rails_SF = (
     Graphic,
     esriRequest
   ) => {
+
+    const baseURL = "https://gis-historical-relic-management.vercel.app/api/bodyComplex/path?path="
+    const parentPath = "ngomon/"
+
     const railsGeojsonLayer = new GeoJSONLayer({
-      url: "./data/centerBuilding/secondFloor/rails/CB.SF.rails.geojson.json",
+      url: baseURL + parentPath + "data/centerBuilding/secondFloor/rails/CB.SF.rails.geojson.json",
     });
   
     railsGeojsonLayer.renderer = {

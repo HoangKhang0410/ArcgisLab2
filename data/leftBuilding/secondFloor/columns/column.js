@@ -25,49 +25,53 @@ export const left_building_cols_sf = (
   Graphic,
   esriRequest
 ) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/cylinder/path?path="
+  const parentPath = "ngomon/"
+
   const col1 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column1.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column1.geojson.json",
   });
 
   const col2 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column2.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column2.geojson.json",
   });
 
   const col3 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column3.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column3.geojson.json",
   });
 
   const col4 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column4.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column4.geojson.json",
   });
   const col5 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column5.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column5.geojson.json",
   });
 
   const col6 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column6.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column6.geojson.json",
   });
 
   const col7 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column7.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column7.geojson.json",
   });
   const col8 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column8.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column8.geojson.json",
   });
   const col9 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column9.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column9.geojson.json",
   });
   const col10 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column10.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column10.geojson.json",
   });
   const col11 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column11.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column11.geojson.json",
   });
   const col12 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column12.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column12.geojson.json",
   });
   const col13 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/columns/left.building.column13.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/columns/left.building.column13.geojson.json",
   });
 
   col1.renderer = {
@@ -283,3 +287,18 @@ export const left_building_cols_sf = (
     col13,
   ];
 };
+
+
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column1.geojson.json
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column12.geojson.json
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column11.geojson.json
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column10.geojson.json
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column5.geojson.json
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column2.geojson.json
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column4.geojson.json
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column13.geojson.json
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column3.geojson.json
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column6.geojson.json
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column7.geojson.json
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column8.geojson.json
+// ngomon/data/leftBuilding/secondFloor/columns/left.building.column9.geojson.json

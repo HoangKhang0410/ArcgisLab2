@@ -7,16 +7,21 @@ export const floor_center = (
   Graphic,
   esriRequest
 ) => {
+
+  const prismBaseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const bodycompBaseURL = "https://gis-historical-relic-management.vercel.app/api/bodyComplex/path?path="
+  const parentPath = "ngomon/"
+
   const bottomFloor = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/floor/floor_bottom.json",
+    url: prismBaseURL + parentPath + "data/centerBuilding/firstFloor/floor/floor_bottom.json",
   });
 
   const floor = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/floor/floor.json",
+    url: bodycompBaseURL + parentPath + "data/centerBuilding/firstFloor/floor/floor.json",
   });
 
   const floor_center = new GeoJSONLayer({
-    url: "./data/centerBuilding/firstFloor/floor/floor_center.json",
+    url: bodycompBaseURL + parentPath + "data/centerBuilding/firstFloor/floor/floor_center.json",
   });
 
 
@@ -74,3 +79,7 @@ export const floor_center = (
     bottomFloor,
   ]
 }
+
+// ngomon/data/centerBuilding/firstFloor/floor/floor_bottom.json
+// ngomon/data/centerBuilding/firstFloor/floor/floor_center.json
+// ngomon/data/centerBuilding/firstFloor/floor/floor.json

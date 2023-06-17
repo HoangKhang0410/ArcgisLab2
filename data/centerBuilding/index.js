@@ -7,7 +7,6 @@ import { doorL_SF } from "./secondFloor/door/LDoor/index.js";
 import { doorB_SF } from "./secondFloor/door/BDoor/index.js";
 import { door_FF } from "./firstFloor/doors/front/door.js";
 import { roof_SF } from "./secondFloor/roof/index.js";
-import { balcony_SF } from "./secondFloor/balcony/index.js";
 import { rails_SF } from "./secondFloor/rails/index.js";
 import { door_left_FF } from "./firstFloor/doors/left/door.js";
 import { floor_center } from "./firstFloor/floor/floor.js";
@@ -148,15 +147,7 @@ export const centerBuilding = (
     Graphic,
     esriRequest
   );
-  const balconySF = balcony_SF(
-    Map,
-    SceneView,
-    GeoJSONLayer,
-    SceneLayer,
-    GraphicsLayer,
-    Graphic,
-    esriRequest
-  );
+
   const railsSF = rails_SF(
     Map,
     SceneView,
@@ -199,7 +190,6 @@ export const centerBuilding = (
     ...doorFF,
     ...doorLeftFF,
     ...roofSF,
-    ...balconySF,
     ...railsSF,
     ...floorCenter,
     ...doorBackFF,

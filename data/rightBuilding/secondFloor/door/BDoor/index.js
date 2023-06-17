@@ -7,147 +7,151 @@ export const doorB_R = (
   Graphic,
   esriRequest
 ) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const baseGeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/base.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/base.geojson.json",
   });
   const door1GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door1.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door1.geojson.json",
   });
   const door2GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door2.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door2.geojson.json",
   });
   const door3GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door3.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door3.geojson.json",
   });
   const door4GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door4.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door4.geojson.json",
   });
   const door5GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door5.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door5.geojson.json",
   });
   const door6GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door6.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door6.geojson.json",
   });
   const door7GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door7.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door7.geojson.json",
   });
   const door8GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door8.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door8.geojson.json",
   });
 
   const decoHoriDoor1GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor1.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor1.geojson.json",
   });
   const decoHoriDoor2GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor2.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor2.geojson.json",
   });
   const decoHoriDoor3GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor3.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor3.geojson.json",
   });
   const decoHoriDoor4GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor4.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor4.geojson.json",
   });
   const decoHoriDoor5GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor5.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor5.geojson.json",
   });
   const decoHoriDoor6GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor6.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor6.geojson.json",
   });
   const decoHoriDoor7GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor7.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor7.geojson.json",
   });
   const decoHoriDoor8GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor8.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor8.geojson.json",
   });
   const decoHoriDoor9GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor9.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor9.geojson.json",
   });
   const decoHoriDoor10GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor10.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor10.geojson.json",
   });
   const decoHoriDoor11GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor11.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor11.geojson.json",
   });
   const decoHoriDoor12GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor12.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor12.geojson.json",
   });
   const decoHoriDoor13GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor13.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor13.geojson.json",
   });
   const decoHoriDoor14GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor14.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor14.geojson.json",
   });
   const decoHoriDoor21GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor21.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor21.geojson.json",
   });
   const decoHoriDoor22GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor22.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor22.geojson.json",
   });
   const decoVertDoor1GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor1.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor1.geojson.json",
   });
   const decoVertDoor2GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor2.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor2.geojson.json",
   });
   const decoVertDoor3GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor3.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor3.geojson.json",
   });
   const decoVertDoor4GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor4.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor4.geojson.json",
   });
   const decoVertDoor5GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor5.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor5.geojson.json",
   });
   const decoVertDoor6GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor6.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor6.geojson.json",
   });
   const decoVertDoor7GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor7.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor7.geojson.json",
   });
   const decoVertDoor8GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor8.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor8.geojson.json",
   });
   const decoVertDoor9GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor9.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor9.geojson.json",
   });
   const decoVertDoor10GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor10.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor10.geojson.json",
   });
   const decoVertDoor11GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor11.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor11.geojson.json",
   });
   const decoVertDoor12GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor12.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor12.geojson.json",
   });
   const decoVertDoor13GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor13.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor13.geojson.json",
   });
   const decoVertDoor14GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor14.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor14.geojson.json",
   });
   const decoVertDoor15GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor15.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor15.geojson.json",
   });
   const decoVertDoor16GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor16.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor16.geojson.json",
   });
   const decoVertDoor17GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor17.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor17.geojson.json",
   });
   const decoVertDoor18GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor18.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor18.geojson.json",
   });
   const decoVertDoor19GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor19.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor19.geojson.json",
   });
   const decoVertDoor20GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor20.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor20.geojson.json",
   });
   const decoVertDoor21GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor21.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor21.geojson.json",
   });
   const decoVertDoor22GeojsonLayer = new GeoJSONLayer({
-    url: "./data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor22.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor22.geojson.json",
   });
 
   baseGeojsonLayer.renderer = {
@@ -908,3 +912,53 @@ export const doorB_R = (
     decoVertDoor22GeojsonLayer,
   ];
 };
+
+
+
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor11.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/base.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor12.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor14.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor1.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor13.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor2.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor10.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor22.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor4.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor21.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor5.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor6.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor9.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor3.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor7.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoHoriDoor8.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor1.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor10.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor12.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor11.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor13.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor15.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor18.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor16.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor14.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor19.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor17.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor20.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor2.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor21.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor22.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor4.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor3.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor5.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor9.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door3.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door2.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door1.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door4.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor8.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor6.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door6.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door7.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door5.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.decoVertDoor7.geojson.json
+// ngomon/data/rightBuilding/secondFloor/door/BDoor/RB.BDoor.door8.geojson.json

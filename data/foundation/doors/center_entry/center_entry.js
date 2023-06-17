@@ -1,15 +1,19 @@
 export const center_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
   GraphicsLayer, Graphic, esriRequest) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const leftWallCenterEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/foundation/doors/center_entry/left_wall.geojson.json"
+    url: baseURL + parentPath + "data/foundation/doors/center_entry/left_wall.geojson.json"
   });
 
   const rightWallCenterEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/foundation/doors/center_entry/right_wall.geojson.json"
+    url: baseURL + parentPath + "data/foundation/doors/center_entry/right_wall.geojson.json"
   });
 
   const topWallCenterEntryGeojsonLayer = new GeoJSONLayer({
-    url: "./data/foundation/doors/center_entry/top_wall.geojson.json"
+    url: baseURL + parentPath + "data/foundation/doors/center_entry/top_wall.geojson.json"
   });
 
   rightWallCenterEntryGeojsonLayer.renderer = {
@@ -66,3 +70,7 @@ export const center_entry = (Map, SceneView, GeoJSONLayer, SceneLayer,
     topWallCenterEntryGeojsonLayer
   ]
 }
+
+// ngomon/data/foundation/doors/center_entry/left_wall.geojson.json
+// ngomon/data/foundation/doors/center_entry/top_wall.geojson.json
+// ngomon/data/foundation/doors/center_entry/right_wall.geojson.json

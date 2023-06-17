@@ -7,24 +7,28 @@ export const floor_sf = (
   Graphic,
   esriRequest
 ) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const floorGeojsonLayer = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/floor/floor.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/floor/floor.geojson.json",
   });
 
   const floorGeojsonLayer2 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/floor/floor.part2.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/floor/floor.part2.geojson.json",
   });
 
   const floorGeojsonLayer3 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/floor/floor.part3.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/floor/floor.part3.geojson.json",
   });
 
   const floorGeojsonLayer4 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/floor/floor.part4.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/floor/floor.part4.geojson.json",
   });
 
   const floorGeojsonLayer5 = new GeoJSONLayer({
-    url: "./data/leftBuilding/secondFloor/floor/floor.part5.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/secondFloor/floor/floor.part5.geojson.json",
   });
 
   floorGeojsonLayer.renderer = {
@@ -115,3 +119,10 @@ export const floor_sf = (
     floorGeojsonLayer5,
   ];
 };
+
+
+// ngomon/data/leftBuilding/secondFloor/floor/floor.part3.geojson.json
+// ngomon/data/leftBuilding/secondFloor/floor/floor.geojson.json
+// ngomon/data/leftBuilding/secondFloor/floor/floor.part2.geojson.json
+// ngomon/data/leftBuilding/secondFloor/floor/floor.part4.geojson.json
+// ngomon/data/leftBuilding/secondFloor/floor/floor.part5.geojson.json

@@ -1,34 +1,38 @@
 export const back_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
+
+    const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+    const parentPath = "ngomon/"
+
     const floorBackWallRailRoot = new GeoJSONLayer({
-        url: "./data/foundation/rails/back_wall/floor.back.wall.rail.root.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/back_wall/floor.back.wall.rail.root.geojson.json"
     });
 
     const floorBackWallRailColumn1 = new GeoJSONLayer({
-        url: "./data/foundation/rails/back_wall/floor.back.wall.rail.column1.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/back_wall/floor.back.wall.rail.column1.geojson.json"
     });
 
     const floorBackWallRailColumn2 = new GeoJSONLayer({
-        url: "./data/foundation/rails/back_wall/floor.back.wall.rail.column2.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/back_wall/floor.back.wall.rail.column2.geojson.json"
     });
 
     const floorBackWallRailWall1 = new GeoJSONLayer({
-        url: "./data/foundation/rails/back_wall/floor.back.wall.rail.wall1.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/back_wall/floor.back.wall.rail.wall1.geojson.json"
     });
 
-    
+
     const floorBackWallRailWall2 = new GeoJSONLayer({
-        url: "./data/foundation/rails/back_wall/floor.back.wall.rail.wall2.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/back_wall/floor.back.wall.rail.wall2.geojson.json"
     });
 
     const floorBackWallRailWall3 = new GeoJSONLayer({
-        url: "./data/foundation/rails/back_wall/floor.back.wall.rail.wall3.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/back_wall/floor.back.wall.rail.wall3.geojson.json"
     });
 
 
 
     floorBackWallRailRoot.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -100,7 +104,7 @@ export const back_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
                     type: "extrude",
                     size: 0.8,
                     material: {
-                        color: "#52565e"    
+                        color: "#52565e"
                     },
                 }
             ]
@@ -132,3 +136,11 @@ export const back_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
         floorBackWallRailWall3
     ]
 }
+
+
+// ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.root.geojson.json
+// ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.wall2.geojson.json
+// ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.column1.geojson.json
+// ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.column2.geojson.json
+// ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.wall3.geojson.json
+// ngomon/data/foundation/rails/back_wall/floor.back.wall.rail.wall1.geojson.json

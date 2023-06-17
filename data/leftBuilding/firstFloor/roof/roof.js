@@ -7,20 +7,24 @@ export const roof_FF = (
   Graphic,
   esriRequest
 ) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const roof1 = new GeoJSONLayer({
-    url: "./data/leftBuilding/firstFloor/roof/right.roof1.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/firstFloor/roof/right.roof1.geojson.json",
   });
 
   const roof2 = new GeoJSONLayer({
-    url: "./data/leftBuilding/firstFloor/roof/right.roof2.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/firstFloor/roof/right.roof2.geojson.json",
   });
 
   const roof3 = new GeoJSONLayer({
-    url: "./data/leftBuilding/firstFloor/roof/right.roof3.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/firstFloor/roof/right.roof3.geojson.json",
   });
 
   const roof4 = new GeoJSONLayer({
-    url: "./data/leftBuilding/firstFloor/roof/right.roof4.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/firstFloor/roof/right.roof4.geojson.json",
   });
 
   roof1.renderer = {
@@ -89,3 +93,9 @@ export const roof_FF = (
 
   return [roof1, roof2, roof3, roof4];
 };
+
+
+// ngomon/data/leftBuilding/firstFloor/roof/right.roof1.geojson.json
+// ngomon/data/leftBuilding/firstFloor/roof/right.roof3.geojson.json
+// ngomon/data/leftBuilding/firstFloor/roof/right.roof4.geojson.json
+// ngomon/data/leftBuilding/firstFloor/roof/right.roof2.geojson.json

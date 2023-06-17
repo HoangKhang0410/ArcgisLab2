@@ -7,16 +7,20 @@ export const left_building_floor1 = (
   Graphic,
   esriRequest
 ) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const bottomFloor = new GeoJSONLayer({
-    url: "./data/leftBuilding/firstFloor/floor/left.building.bottom.floor.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/firstFloor/floor/left.building.bottom.floor.geojson.json",
   });
 
   const floor  = new  GeoJSONLayer({
-    url: "./data/leftBuilding/firstFloor/floor/left.building.floor.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/firstFloor/floor/left.building.floor.geojson.json",
   });
 
   const tileFloor = new GeoJSONLayer({
-    url: "./data/leftBuilding/firstFloor/floor/left.building.tile.floor.geojson.json",
+    url: baseURL + parentPath + "data/leftBuilding/firstFloor/floor/left.building.tile.floor.geojson.json",
   });
 
 
@@ -74,3 +78,7 @@ export const left_building_floor1 = (
     tileFloor
   ];
 };
+
+// ngomon/data/leftBuilding/firstFloor/floor/left.building.floor.geojson.json
+// ngomon/data/leftBuilding/firstFloor/floor/left.building.bottom.floor.geojson.json
+// ngomon/data/leftBuilding/firstFloor/floor/left.building.tile.floor.geojson.json

@@ -1,41 +1,45 @@
 export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
+
+    const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+    const parentPath = "ngomon/"
+
     const topWallPart1 = new GeoJSONLayer({
-        url: "./data/foundation/walls/top_wall/floor.top.wall.part1.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/top_wall/floor.top.wall.part1.geojson.json"
     });
 
     const topWallPart2 = new GeoJSONLayer({
-        url: "./data/foundation/walls/top_wall/floor.top.wall.part2.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/top_wall/floor.top.wall.part2.geojson.json"
     });
-    
+
     const topWallPart3 = new GeoJSONLayer({
-        url: "./data/foundation/walls/top_wall/floor.top.wall.part3.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/top_wall/floor.top.wall.part3.geojson.json"
     });
 
     const topWallPart4 = new GeoJSONLayer({
-        url: "./data/foundation/walls/top_wall/floor.top.wall.part4.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/top_wall/floor.top.wall.part4.geojson.json"
     });
 
     const topWallPart5 = new GeoJSONLayer({
-        url: "./data/foundation/walls/top_wall/floor.top.wall.part5.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/top_wall/floor.top.wall.part5.geojson.json"
     });
 
     const topWallPart6 = new GeoJSONLayer({
-        url: "./data/foundation/walls/top_wall/floor.top.wall.part6.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/top_wall/floor.top.wall.part6.geojson.json"
     });
 
     const topWallPart7 = new GeoJSONLayer({
-        url: "./data/foundation/walls/top_wall/floor.top.wall.part7.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/top_wall/floor.top.wall.part7.geojson.json"
     });
 
     const topWallPart8 = new GeoJSONLayer({
-        url: "./data/foundation/walls/top_wall/floor.top.wall.part8.geojson.json"
+        url: baseURL + parentPath + "data/foundation/walls/top_wall/floor.top.wall.part8.geojson.json"
     });
 
 
 
     topWallPart1.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -51,7 +55,7 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     topWallPart2.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -67,7 +71,7 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     topWallPart3.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -83,7 +87,7 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     topWallPart4.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -97,10 +101,10 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
             ]
         }
     };
-    
+
 
     topWallPart5.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -116,7 +120,7 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     topWallPart6.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -130,9 +134,9 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
             ]
         }
     };
-    
+
     topWallPart7.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -148,7 +152,7 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
     };
 
     topWallPart8.renderer = {
-        type: "simple", 
+        type: "simple",
         symbol: {
             type: "polygon-3d",
             symbolLayers: [
@@ -174,3 +178,12 @@ export const top_wall = (Map, SceneView, GeoJSONLayer, SceneLayer,
         topWallPart8
     ]
 }
+
+// ngomon/data/foundation/walls/top_wall/floor.top.wall.part1.geojson.json
+// ngomon/data/foundation/walls/top_wall/floor.top.wall.part7.geojson.json
+// ngomon/data/foundation/walls/top_wall/floor.top.wall.part6.geojson.json
+// ngomon/data/foundation/walls/top_wall/floor.top.wall.part5.geojson.json
+// ngomon/data/foundation/walls/top_wall/floor.top.wall.part3.geojson.json
+// ngomon/data/foundation/walls/top_wall/floor.top.wall.part2.geojson.json
+// ngomon/data/foundation/walls/top_wall/floor.top.wall.part4.geojson.json
+// ngomon/data/foundation/walls/top_wall/floor.top.wall.part8.geojson.json

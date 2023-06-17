@@ -1,39 +1,43 @@
 export const left_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
     GraphicsLayer, Graphic, esriRequest) => {
+
+    const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+    const parentPath = "ngomon/"
+
     const floorLeftWallRailRoot = new GeoJSONLayer({
-        url: "./data/foundation/rails/left_wall/floor.left.wall.rail.root.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/left_wall/floor.left.wall.rail.root.geojson.json"
     });
 
     const floorLeftWallRailColumn1 = new GeoJSONLayer({
-        url: "./data/foundation/rails/left_wall/floor.left.wall.rail.column1.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/left_wall/floor.left.wall.rail.column1.geojson.json"
     });
 
     const floorLeftWallRailColumn2 = new GeoJSONLayer({
-        url: "./data/foundation/rails/left_wall/floor.left.wall.rail.column2.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/left_wall/floor.left.wall.rail.column2.geojson.json"
     });
 
     const floorLeftWallRailColumn3 = new GeoJSONLayer({
-        url: "./data/foundation/rails/left_wall/floor.left.wall.rail.column3.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/left_wall/floor.left.wall.rail.column3.geojson.json"
     });
 
     const floorLeftWallRailColumn4 = new GeoJSONLayer({
-        url: "./data/foundation/rails/left_wall/floor.left.wall.rail.column4.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/left_wall/floor.left.wall.rail.column4.geojson.json"
     });
 
     const floorLeftWallRailColumn5 = new GeoJSONLayer({
-        url: "./data/foundation/rails/left_wall/floor.left.wall.rail.column5.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/left_wall/floor.left.wall.rail.column5.geojson.json"
     });
 
     const floorLeftWallRailWall1 = new GeoJSONLayer({
-        url: "./data/foundation/rails/left_wall/floor.left.wall.rail.wall1.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/left_wall/floor.left.wall.rail.wall1.geojson.json"
     });
 
     const floorLeftWallRailWall2 = new GeoJSONLayer({
-        url: "./data/foundation/rails/left_wall/floor.left.wall.rail.wall2.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/left_wall/floor.left.wall.rail.wall2.geojson.json"
     });
 
     const floorLeftWallRailWall3 = new GeoJSONLayer({
-        url: "./data/foundation/rails/left_wall/floor.left.wall.rail.wall3.geojson.json"
+        url: baseURL + parentPath + "data/foundation/rails/left_wall/floor.left.wall.rail.wall3.geojson.json"
     });
 
     floorLeftWallRailRoot.renderer = {
@@ -194,3 +198,13 @@ export const left_wall_rail = (Map, SceneView, GeoJSONLayer, SceneLayer,
         floorLeftWallRailWall3
     ]
 }
+
+// ngomon/data/foundation/rails/left_wall/floor.left.wall.rail.column1.geojson.json
+// ngomon/data/foundation/rails/left_wall/floor.left.wall.rail.column3.geojson.json
+// ngomon/data/foundation/rails/left_wall/floor.left.wall.rail.wall3.geojson.json
+// ngomon/data/foundation/rails/left_wall/floor.left.wall.rail.column2.geojson.json
+// ngomon/data/foundation/rails/left_wall/floor.left.wall.rail.column5.geojson.json
+// ngomon/data/foundation/rails/left_wall/floor.left.wall.rail.wall1.geojson.json
+// ngomon/data/foundation/rails/left_wall/floor.left.wall.rail.root.geojson.json
+// ngomon/data/foundation/rails/left_wall/floor.left.wall.rail.wall2.geojson.json
+// ngomon/data/foundation/rails/left_wall/floor.left.wall.rail.column4.geojson.json

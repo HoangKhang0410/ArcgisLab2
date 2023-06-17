@@ -7,28 +7,32 @@ export const right_step = (
   Graphic,
   esriRequest
 ) => {
+
+  const baseURL = "https://gis-historical-relic-management.vercel.app/api/prism/path?path="
+  const parentPath = "ngomon/"
+
   const rightStep1 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/step/right_step/floor1.right.step1.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/step/right_step/floor1.right.step1.geojson.json",
   });
 
   const rightStep2 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/step/right_step/floor1.right.step2.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/step/right_step/floor1.right.step2.geojson.json",
   });
 
   const rightStep3 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/step/right_step/floor1.right.step3.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/step/right_step/floor1.right.step3.geojson.json",
   });
 
   const rightStep4 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/step/right_step/floor1.right.step4.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/step/right_step/floor1.right.step4.geojson.json",
   });
 
   const rightStep5 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/step/right_step/floor1.right.step5.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/step/right_step/floor1.right.step5.geojson.json",
   });
 
   const rightStep6 = new GeoJSONLayer({
-    url: "./data/rightBuilding/firstFloor/step/right_step/floor1.right.step6.geojson.json",
+    url: baseURL + parentPath + "data/rightBuilding/firstFloor/step/right_step/floor1.right.step6.geojson.json",
   });
 
   rightStep1.renderer = {
@@ -136,3 +140,10 @@ export const right_step = (
     rightStep6,
   ];
 };
+
+// ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step1.geojson.json
+// ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step2.geojson.json
+// ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step6.geojson.json
+// ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step5.geojson.json
+// ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step4.geojson.json
+// ngomon/data/rightBuilding/firstFloor/step/right_step/floor1.right.step3.geojson.json
